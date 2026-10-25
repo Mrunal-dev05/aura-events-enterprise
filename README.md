@@ -2,6 +2,10 @@
 
 # ✦ AuraEvents Enterprise AI ✦
 
+<p align="center">
+  <img src="./AuraEvents_social_preview_under_1MB.jpg" alt="AuraEvents Enterprise AI" width="80%" />
+</p>
+
 ### Autonomous Event Planning & Fiscal Orchestration Platform
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.4.3-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
