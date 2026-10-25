@@ -1,6 +1,7 @@
-<div align="center">
+ <div align="center">
 
 # ✦ AuraEvents Enterprise AI ✦
+
 ### Autonomous Event Planning & Fiscal Orchestration Platform
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.4.3-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
@@ -10,246 +11,284 @@
 [![Vercel Deploy](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-<p align="center">
-  A high-performance SaaS platform built for event managers, producers, and enterprise organizers. Features live Indian Rupee (INR ₹) budget ledgers, run-of-show scheduling, RSVP guest tracking, verified vendor networks, and 1-click autonomous event synthesis powered by Google Gemini.
-</p>
+A high-performance SaaS platform built for event managers, producers, and enterprise organizers. Features Indian Rupee (INR ₹) budget ledgers, run-of-show scheduling, RSVP guest tracking, vendor management, and AI-assisted event planning powered by Google Gemini.
 
-[Explore Demo](#-quick-start) • [Features](#-features) • [Deployment](#-one-click-deployment) • [Architecture](#-tech-stack)
+[**Live Demo**](https://aura-events-enterprise.vercel.app) • [**Source Code**](https://github.com/Mrunal-dev05/aura-events-enterprise)
 
 </div>
-
 
 ---
 
 ## 🚀 Live Demo & Links
 
-🌐 **[Open AuraEvents Live Demo](https://aura-events-enterprise.vercel.app)** *(Deploy link)*
-
-💻 **[View Source Code](https://github.com/Mrunal-dev05/aura-events-enterprise)**
+- 🌐 **Live Demo:** [AuraEvents Enterprise AI](https://aura-events-enterprise.vercel.app)
+- 💻 **Source Code:** [GitHub Repository](https://github.com/Mrunal-dev05/aura-events-enterprise)
 
 ---
 
 ## 🎯 The Problem
 
-Large-scale event operations (conferences, hackathons, galas, luxury weddings) suffer from disjointed workflows:
+Large-scale event operations, including conferences, hackathons, galas, and weddings, often suffer from disconnected workflows:
 
-- Fragmented budgets across manual Excel sheets
-- Uncoordinated minute-by-minute run-of-show schedules
-- Untracked vendor contract states and invoice overruns
-- Manual milestone tracking with no centralized accountability
-- Lack of intelligent, instant initial event architectural blueprints
+- Fragmented budgets maintained in manual spreadsheets.
+- Uncoordinated, minute-by-minute event schedules.
+- Untracked vendor contracts, invoices, and expenses.
+- Manual milestone tracking without centralized accountability.
+- Time-consuming preparation of initial event plans.
 
 ### 💡 The Solution
 
-AuraEvents establishes an end-to-end execution pipeline:
+AuraEvents brings event planning and operational tracking together in one platform.
 
 **Synthesize → Schedule → Allocate → Audit → Reconcile**
 
-Instead of static checklists, the system dynamically calculates fiscal utilization, tracks milestone priorities, logs itemized vendor liabilities in Indian Rupees (₹), and integrates directly with Gemini AI to generate production-ready event frameworks in seconds.
+The platform is designed to help organizers manage event budgets, track milestones, organize vendor information, coordinate schedules, and generate event-planning blueprints using Google Gemini.
 
 ---
 
 ## ✨ Key Features
 
 ### 📌 Full Event Lifecycle Management
-- **Structured Onboarding**: Event category, pax capacity, multi-location tags, and baseline capital ceiling.
-- **Run-of-Show Engine**: Minute-by-minute cue scheduling with assigned operational leads (Audio/Visual, PR, Hospitality).
-- **Prioritized Milestones**: Critical-path task checklists (`High`, `Medium`, `Low`) with live completion tracking.
-- **RSVP & Seating Matrix**: Attendee role allocations, delegate badges, and VIP table assignments.
-- **Brief Exporting**: One-click formatted `.csv` brief generation for offline stakeholder review.
 
-### 💰 Real-Time Fiscal Ledger (INR ₹)
-The fiscal engine performs real-time arithmetic calculations with no hardcoded stats:
+- **Structured Onboarding:** Configure event categories, guest capacity, locations, and budget limits.
+- **Run-of-Show Scheduling:** Organize event activities and operational responsibilities.
+- **Prioritized Milestones:** Track tasks using High, Medium, and Low priority levels.
+- **RSVP & Seating Management:** Organize attendee roles, guest lists, and VIP seating.
+- **Brief Exporting:** Export event information as CSV for offline review.
+
+### 💰 Fiscal Ledger (INR ₹)
+
+The fiscal dashboard is designed to track event budgets and expenses dynamically.
 
 | Fiscal Metric | Formula / Logic |
 |---|---|
-| **Planned Capital** | Sum of all event target budgets |
-| **Incurred Liabilities** | Dynamic sum of all itemized invoices |
-| **Reserve Margin** | $\text{Planned Capital} - \text{Incurred Outlay}$ |
-| **Utilization Rate** | $(\text{Total Spent} / \text{Total Budget}) \times 100$ |
+| **Planned Capital** | Sum of planned event budgets |
+| **Incurred Liabilities** | Sum of recorded expenses and invoices |
+| **Reserve Margin** | Planned Capital − Incurred Outlay |
+| **Utilization Rate** | (Total Spent / Total Budget) × 100 |
 
-- **Threshold Alerts**: Visual alerts when spending crosses 80% and over-budget triggers if utilization exceeds 100%.
-- **Currency Compliance**: Formatted using the Indian Numbering System (`Intl.NumberFormat('en-IN')`).
-- **Payment Lifecycle**: Multi-state tracking (`Paid`, `Pending`, `Overdue`).
+Additional capabilities:
+
+- **Budget Threshold Alerts:** Highlight spending above 80% and budgets exceeding 100%, where implemented.
+- **Currency Formatting:** Use the Indian numbering system through `Intl.NumberFormat('en-IN')`.
+- **Payment Lifecycle:** Track payment states such as Paid, Pending, and Overdue.
 
 ### 🤖 Gemini AI Event Architect
-- Direct integration with **Google Gemini 2.5 Flash**.
-- Natural language parameter synthesis (Pax, location, budget ceiling, theme).
-- Generates complete JSON blueprints containing event scope, run-of-show cues, and realistic line-item budget allocations.
-- **1-Click Workspace Import**: Converts generated AI schemas directly into active operational records without manual re-entry.
+
+- Integration with the Google Gemini API for AI-assisted event planning.
+- Natural-language inputs for guest capacity, location, budget, and theme.
+- Generation of structured event-planning blueprints, schedules, and budget allocations.
+- A workflow for importing generated plans into the event workspace, where implemented.
 
 ### 🏢 Vendor & Partner Directory
-- Centralized tracking of production, AV, venue, catering, and PR contractors.
-- Real-time contact directories, contract statuses (`Signed`, `In Discussion`, `Shortlisted`), and standardized base quotations.
+
+- Organize vendor information for production, audiovisual services, venues, catering, and PR.
+- Track contact information and contract statuses.
+- Record vendor quotations and related event expenses.
 
 ---
 
 ## 🔄 Core Platform Workflow
 
 ```text
-         Event Concept / Client Brief
-                      │
-        ┌─────────────┴─────────────┐
-        │                           │
-  Manual Entry               Gemini AI Architect
-        │                           │
-        └─────────────┬─────────────┘
-                      ↓
-           Active Event Workspace
-                      │
-        ┌─────────────┼─────────────┐
-        │             │             │
-   Run-of-Show    Milestones    RSVP List
-  (Minute Cues)   (Priority)    (Delegates)
-        │             │             │
-        └─────────────┼─────────────┘
-                      ↓
-            Fiscal Budget Engine
-          (Invoices & Disbursements)
-                      │
-        ┌─────────────┴─────────────┐
-        │                           │
-   Within Budget              Over-Budget
-   (Normal Flow)            (Warning Alert)
-        │                           │
-        └─────────────┬─────────────┘
-                      ↓
-               Event Execution
-                      ↓
-              Final Reconciliation
+                 Event Concept / Client Brief
+                             |
+             +---------------+---------------+
+             |                               |
+        Manual Entry                  Gemini AI Architect
+             |                               |
+             +---------------+---------------+
+                             |
+                  Active Event Workspace
+                             |
+             +---------------+---------------+
+             |               |               |
+        Run-of-Show       Milestones       RSVP List
+        Scheduling        Task Tracking    Guest Records
+             |               |               |
+             +---------------+---------------+
+                             |
+                    Fiscal Budget Ledger
+                  Expenses & Invoices
+                             |
+             +---------------+---------------+
+             |                               |
+       Within Budget                   Over Budget
+       Normal Tracking                Warning / Review
+             |                               |
+             +---------------+---------------+
+                             |
+                      Event Execution
+                             |
+                    Final Reconciliation
+```
+
 ---
 
 ## 🏗️ Architecture
 
 ```text
-                            AuraEvents Platform
-                                      │
-              ┌───────────────────────┴───────────────────────┐
-              │                                               │
-       Frontend Core (SaaS)                          Intelligence Layer
-              │                                               │
-      ┌───────┼───────┐                                       │
-      │       │       │                                       ↓
-  Dashboard Events  Ledger                             Gemini 2.5 Flash
-      │       │       │                                       │
-      └───────┼───────┘                                       │
-              │                                               │
-              ↓                                               │
-    Persistence & State Engine                                │
-  (localStorage / React 19 Context) ←── 1-Click Import Schema ┘
+                  AuraEvents Platform
+                          |
+            +-------------+-------------+
+            |                           |
+       Frontend Core              AI Integration
+            |                           |
+     +------+------+                     |
+     |      |      |                     |
+ Dashboard Events Ledger            Gemini API
+     |      |      |                     |
+     +------+------+                     |
+            |                           |
+       Application State <---------------+
+            |
+      Event Data & Metrics
+```
 
-The system is architected as an ultra-responsive single-page dashboard with zero heavy external UI dependencies, maximizing rendering performance and build speeds.
+The platform uses a dashboard-oriented interface for managing event information. Its frontend, state-management approach, persistence mechanism, and AI integration depend on the implementation in the repository.
+
 ---
 
 ## 📁 Project Structure
 
+```text
 aura-events-enterprise/
 │
 ├── app/
-│   ├── globals.css         # Global dark slate theme & Tailwind utilities
-│   ├── layout.jsx          # Root HTML/Body shell & metadata config
-│   └── page.jsx            # Core SaaS platform, state engine & AI architect
+│   ├── globals.css        # Global styles and Tailwind utilities
+│   ├── layout.jsx         # Root layout and page metadata
+│   └── page.jsx           # Main application interface
 │
-├── public/                 # Static brand assets and icons
-├── tailwind.config.js      # Custom theme color extensions & plugins
-├── postcss.config.js       # PostCSS processor configuration
-├── package.json            # Next.js 16.4.3, React 19, Lucide dependencies
-├── .gitignore              # Node & build artifact exclusion
-└── README.md
-
-
+├── public/                # Static assets and icons
+├── tailwind.config.js     # Tailwind CSS configuration
+├── postcss.config.js      # PostCSS configuration
+├── package.json           # Dependencies and scripts
+├── .gitignore             # Files excluded from Git
+└── README.md              # Project documentation
+```
 
 ---
 
 ## 🛠️ Built With
 
-**Next.js 16.4.3 (Turbopack) · React 19 · Tailwind CSS · Lucide React · Google Gemini API**
+**Next.js · React · Tailwind CSS · Lucide React · Google Gemini API**
 
 ### Technology Roles
 
 | Technology | Purpose |
 |---|---|
-| **Next.js 16.4.3** | Turbopack compilation, modern App Router architecture |
-| **React 19** | Client-side reactive state management and modal workflows |
-| **Tailwind CSS** | Dark-slate `#07080c` editorial design system |
-| **Google Gemini API** | Autonomous structured blueprint & run-of-show synthesis |
-| **Lucide Icons** | Accessible, consistent interface iconography |
+| **Next.js** | Application framework and routing |
+| **React** | Component-based user interface |
+| **Tailwind CSS** | Utility-first styling |
+| **Google Gemini API** | AI-assisted event-planning capabilities |
+| **Lucide React** | Interface icons |
 
 ---
+
 ## ⚙️ Run Locally
 
 ### Prerequisites
 
-- **Node.js 18+** or **Node.js 20+**
-- Git
+- Node.js compatible with the version required by the project.
+- npm.
+- Git.
 
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/Mrunal-dev05/aura-events-enterprise.git](https://github.com/Mrunal-dev05/aura-events-enterprise.git)
+git clone https://github.com/Mrunal-dev05/aura-events-enterprise.git
 cd aura-events-enterprise
+```
 
-###2. Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 npm install
+```
 
-###3. Run Development Server
+### 3. Configure Environment Variables
+
+If the application uses the Gemini API, create a `.env.local` file in the project root and add the API key variable expected by the application.
+
+For example:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+Use the exact environment-variable name referenced in the project's source code. Never commit real API keys or other secrets to GitHub.
+
+### 4. Start the Development Server
+
 ```bash
 npm run dev
-Open http://localhost:3000 in your browser.
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
 ## 📊 Product Highlights
 
 ```text
-                   AuraEvents
-                        │
-        ┌───────────────┼───────────────┐
-        │               │               │
-    Blueprint       Schedule         Audit
-        │               │               │
-        ↓               ↓               ↓
-    Gemini AI      Run-of-Show     INR Ledger
-        │               │               │
-        └───────────────┼───────────────┘
-                        ↓
-                 Execution Ready
-                        ↓
-                 Solvent & Closed
-###AuraEvents solves one clear objective: eliminate fiscal ambiguity and scheduling chaos in enterprise event operations.
+                     AuraEvents
+                          |
+             +------------+------------+
+             |            |            |
+         Blueprint     Schedule       Audit
+             |            |            |
+          Gemini AI   Run-of-Show   INR Ledger
+             |            |            |
+             +------------+------------+
+                          |
+                  Event Coordination
+                          |
+                   Final Reconciliation
+```
+
+AuraEvents aims to help event organizers manage planning, scheduling, and budget tracking from a centralized workspace.
+
 ---
+
 ## 🎓 Academic & Engineering Value
 
-AuraEvents demonstrates how modern full-stack development, strict fiscal calculation algorithms, and generative AI can converge into a production-grade software product:
+AuraEvents demonstrates concepts relevant to modern full-stack development and AI-assisted application design:
 
-- **State Synchronization**: Immediate cross-component updates between budgets, events, and metrics.
-- **Enterprise UI/UX**: Elimination of generic AI aesthetics in favor of a dark-slate, high-density editorial interface.
-- **API Guardrails & Graceful Degradation**: Dual-mode Gemini architecture that falls back to structured simulations when offline.
-- **Data Persistence**: Resilient local-state synchronization across browser reloads.
+- **State Management:** Keeping related interface components synchronized.
+- **Dashboard UI/UX:** Organizing event information in a structured interface.
+- **API Integration:** Connecting an application to an AI service.
+- **Data Persistence:** Managing application data according to the implemented storage approach.
+- **Fiscal Calculations:** Applying arithmetic to budgets, expenses, and utilization metrics.
+- **Graceful Degradation:** Supporting fallback behavior where implemented.
 
 ---
+
 ## 🔮 Future Improvements
 
-- 🗄️ Multi-tenant PostgreSQL / Supabase remote persistence
-- 🔐 NextAuth / Clerk
-- 💳 Razorpay / Stripe automated payment gateway reconciliation
--📱 WhatsApp Business API automated attendee RSVP confirmations
--📄 Direct PDF contract parsing for instant invoice population
-###Built an Enterprise SaaS Event Planner and Fiscal Orchestrator using Next.js 16, React 19, and Gemini 2.5 Flash, featuring dynamic INR budget tracking, run-of-show scheduling, and verified vendor directories.
+Potential improvements include:
+
+- 🗄️ Persistent multi-user storage using PostgreSQL or Supabase.
+- 🔐 Authentication and authorization using a solution such as Auth.js or Clerk.
+- 💳 Payment gateway integration and automated reconciliation.
+- 📱 WhatsApp Business API integration for attendee RSVP notifications.
+- 📄 PDF contract and invoice parsing.
+- 📈 Advanced analytics and event-performance reporting.
+- 🧪 Automated tests for core workflows and budget calculations.
 
 ---
+
 ## 👨‍💻 Developer
 
-**Mrunal Pimpale**  
+**Mrunal Pimpale**
+
 Computer Engineering Student | Full-Stack & Systems Development
 
 🔗 **GitHub:** [@Mrunal-dev05](https://github.com/Mrunal-dev05)
 
 ---
+
 ## 📄 License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+This project is developed for academic learning, portfolio development, and demonstration purposes.
 
-This project is developed for **academic learning, portfolio development, and demonstration purposes**.
+Distributed under the MIT License. See the [MIT License](https://opensource.org/licenses/MIT) for details.
